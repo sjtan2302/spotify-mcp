@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "description": "An MCP server exposing read-only Spotify listening data to AI assistants",
   "type": "module",
-  "bin": { "spotify-mcp": "dist/index.js" },
+  "bin": {
+    "spotify-mcp": "dist/index.js"
+  },
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
@@ -14,9 +18,17 @@
     "smoke": "npm run build && node scripts/smoke.mjs",
     "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
   },
-  "keywords": ["mcp", "model-context-protocol", "spotify", "ai", "claude"],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "spotify",
+    "ai",
+    "claude"
+  ],
   "license": "MIT",
-  "engines": { "node": ">=20.12" },
+  "engines": {
+    "node": ">=20.12"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
     "zod": "^4.5.4"
@@ -24,5 +36,6 @@
   "devDependencies": {
     "@types/node": "^24.0.0",
     "typescript": "^5.7.0"
-  }
+  },
+  "author": "Samuel Tan"
 }
